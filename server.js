@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 8080
 
 
 //const URL = 'mongodb+srv://shadik:shadik654@cluster0-izfh7.mongodb.net/dbcheck?retryWrites=true&w=majority'
+const MONGODB_URI = 'mongodb+srv://shadik:shadik654@cluster0-izfh7.mongodb.net/test?retryWrites=true&w=majority'
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/db_check',{
     useNewUrlParser:true,

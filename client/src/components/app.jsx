@@ -114,6 +114,7 @@ handleBtn = () =>
             value={this.state.title}
             placeholder="Enter title here"
             onChange={this.handleChange}
+            required=""
           />
 
           <Input
@@ -125,6 +126,7 @@ handleBtn = () =>
             placeholder="Enter body here"
             onChange={this.handleChange}
             value={this.state.body}
+            required=""
           />
           <Button color="success" className="form-control mb-1">
             Create

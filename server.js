@@ -10,11 +10,11 @@ const PORT = process.env.PORT || 8080
 
 
 //|| 'mongodb://localhost/db_check'
+//'mongodb+srv://shadik:shadik654@cluster0-izfh7.mongodb.net/test?retryWrites=true&w=majority'
 
-//const URL = 'mongodb+srv://shadik:shadik654@cluster0-izfh7.mongodb.net/dbcheck?retryWrites=true&w=majority'
-const MONGODB_URI = 'mongodb+srv://shadik:shadik654@cluster0-izfh7.mongodb.net/test?retryWrites=true&w=majority'
+const MONGODB_URI = process.env.DB_URL;
 
-mongoose.connect(MONGODB_URI ,{
+mongoose.connect(process.env.DB_URL || 'mongodb://localhost/db_check',{
     useNewUrlParser:true,
     useUnifiedTopology:true
 });

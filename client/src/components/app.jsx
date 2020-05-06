@@ -25,7 +25,7 @@ class App extends Component {
     };
 
     axios({
-       url: "http://localhost:8080/api/save",
+       url: "api/save",
       //url: "/api/save",
       method: 'POST',
       data: datas,
@@ -60,7 +60,7 @@ componentDidMount=()=>
 
 getFromDb = ()=>
 {
-    axios.get('http://localhost:8080/api/name')
+    axios.get('/api/name')
     .then((res)=>
     {
         const datae = res.data;

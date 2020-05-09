@@ -9,7 +9,7 @@ class App extends Component {
     title: '',
     body:'',
     post:[],
-    btn:false
+    btn:false,
   };
 
   handleChange = (event) => {
